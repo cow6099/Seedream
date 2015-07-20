@@ -65,7 +65,7 @@ nav {			/*nav영역 설정*/
 	padding: 30px 0;			/*영역간격 설정*/
 	background-color: #ffffff;	/*nav영역 배경색*/
 }
-nav > .nav-inner > ul > li > a {
+nav > .nav-inner > ul > li > a {	/*메뉴 초기상태*/
 	height: 30px;
 	font-family: 'Roboto', 'Noto Sans Korean';
 	font-weight: 400;
@@ -74,6 +74,7 @@ nav > .nav-inner > ul > li > a {
 	line-height: 30px;
 	position: relative;
 	cursor: pointer;
+	padding-bottom: 60px;
 }
 nav > .nav-inner > ul > li > a:before {		/*상단메뉴선택시 밑줄*/
 	display: block;
