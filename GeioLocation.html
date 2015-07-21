@@ -163,17 +163,19 @@
  
         var map = new google.maps.Map(document.getElementById('map_canvas'), opt);
         var marker = new google.maps.Marker({
-                position: myLatlng,
+                position: new google.maps.LatLng(latitude, longitude),
                 map: map,
-                title: "seedream"
+                title: "현재위치"
             });
+
     };
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                     Footer
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <div id="map_canvas"></div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                     Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <body onload="initialize()">
             <footer id="footer" class="footer">
             <div class="footer-inner">
