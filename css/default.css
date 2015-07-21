@@ -74,7 +74,9 @@ nav > .nav-inner > ul > li > a {
 	line-height: 30px;
 	position: relative;
 	cursor: pointer;
+	padding- bottom:60px;
 }
+/* 메뉴 누르면 초록색 밑줄 */
 nav > .nav-inner > ul > li > a:before {
 	display: block;
 	content: '';
@@ -192,6 +194,7 @@ section .section-desc {
     position: absolute;
     cursor: pointer;
     clear: both;
+    z-index: 50;
 }
 /**************************
  * specific als elements
@@ -203,18 +206,15 @@ section .section-desc {
 	left: 0;
 	width: 100%;
 	z-index: 500;
-	
 	border-top: 4px solid #2e9f5c;
 	box-shadow: 0 0 3px rgba(0, 0, 0, .225);
 	-o-box-shadow: 0 0 3px rgba(0, 0, 0, .225);
 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .225);
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .225);
-	
 	transform: translate3d(0, -150px, 0);
 	-o-transform: translate3d(0, -150px, 0);
 	-moz-transform: translate3d(0, -150px, 0);
 	-webkit-transform: translate3d(0, -150px, 0);
-	
 	transition: transform .3s ease, -webkit-transform .3s ease, opacity .1s ease;
 	-o-transition: transform .3s ease, -webkit-transform .3s ease, opacity .1s ease;
 	-moz-transition: transform .3s ease, -webkit-transform .3s ease, opacity .1s ease;

@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>seedream | 꿈을 향한 미래 농업, 씨드림과 함께</title>
@@ -41,26 +42,16 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </head>
 <body>
-	
-	
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                              [Header] 최상단 메뉴
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->		
 	<header>
 		<div class="header-top">
 			<div class="header-inner">
 				<div class="header-top-inner">
-					<a href="http://www.dankook.ac.kr/" target="_blank">단국대학교</a>
-					<a href="http://www.dankook.ac.kr/" target="_blank">IOF사업단</a>
+					<a href="http://www.dankook.ac.kr/" ta et="_blank">단국대학교</a>
+					<a href="http://www.dankook.ac.kr/" ta et="_blank">IOF사업단</a>
 					<a href="http://www.msip.go.kr/" target="_blank">미래창조과학부</a>
 				</div>
 			</div>
 		</div>
-		
-		
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                             [Nav] 상단 네비게이션 바(div : nav-inner)
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 		<nav>
 			<div class="nav-inner">
 				<a href="./index.html"><img src="images/als-images/logo_m.jpg" width="190" height="38" alt="seedream" /></a>
@@ -68,17 +59,17 @@
 					<li>
 						<a id="imgmargin" class="menuLink"><span>씨드림소개</span></a>
 						<ul>
-							<li><a href="#">씨드림소개</a></li>
-							<li><a href="#">비젼</a></li>
-							<li><a href="#">IoF</a></li>
+							<li><a class="submenuLink">씨드림소개</a></li>
+							<li><a class="submenuLink">비젼</a></li>
+							<li><a class="submenuLink">IoF</a></li>
 						</ul>
 					</li>
 					<li><a class="menuLink"><span>스마트팜</span></a></li>
 					<li>
 						<a class="menuLink"><span>LoK서비스</span></a>
 						<ul>
-							<li><a href="#">LoK서비스</a></li>
-							<li><a href="#">생육환경가이드라인</a></li>
+							<li><a class="submenuLink">LoK서비스</a></li>
+							<li><a class="submenuLink">생육환경가이드라인</a></li>
 						</ul>
 					</li>
 					<li><a class="menuLink"><span>재배 가이드</span></a></li>
@@ -89,24 +80,25 @@
 			</nav>
 		</div>
 	</header>
-	
-	
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                    [Nav] 스트롤시 따라오는 네비게이션 바 (div : header-layer)
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
 	<header id="header-layer">
 		<nav>
 			<div class="nav-inner">
 				<a href="http://seedream.net/"><img src="images/als-images/logo_m.jpg" width="190" height="38" alt="seedream" /></a>
 				<ul>
 					<li>
-						<a id="imgmargin" class="menuLink"><span>씨드림소개</span></a>
-						<ul><li><a class="submenuLink longLink">씨드림소개</a></li><li><a class="submenuLink longLinkk longLink">IoF비전</a></li></ul>
+						<a class="menuLink"><span>씨드림소개</span></a>
+						<ul>
+							<li><a class="submenuLink">씨드림소개</a></li>
+							<li><a class="submenuLink">비전</a></li>
+							<li><a class="submenuLink">IOF</a></li>
+						</ul>
 					</li>
 					<li><a class="menuLink"><span>스마트팜</span></a></li>
 					<li>
 						<a class="menuLink"><span>LoK서비스</span></a>
-						<ul><li><a class="submenuLink longLink">LoK서비스</a></li><li><a class="submenuLink longLink">생육환경가이드라인</a></li></ul>
+						<ul><li><a class="submenuLink">LoK서비스</a></li>
+							<li><a class="submenuLink">생육환경가이드라인</a></li>
+						</ul>
 					</li>
 					<li><a class="menuLink"><span>재배 가이드</span></a></li>
 					<li><a class="menuLink"><span>엘리트 귀농</span></a></li>
@@ -116,11 +108,6 @@
 			</nav>
 		</div>
 	</header>
-	
-	
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                         [Section] 씨드림 프로젝트(플래시)
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->		
 	<section id="visual">
 		<div class="item" style="background: url('images/main_visual1.jpg') no-repeat center top scroll transparent;"></div>
 		<div class="item" style="background: url('images/main_visual2.jpg') no-repeat center top scroll transparent;"></div>
@@ -155,12 +142,6 @@
 			</section>
 		</section>
 	</section>
-	
-	
-	
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                                    [Section] 재배 가이드
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->		
 	<section id="content">
 		<div id="lista1" class="als-container">
 			<h1>재배가이드</h1>
@@ -190,11 +171,6 @@
 			<span class="als-next"></span>
 		</div>
 	</section>
-	
-	
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                                   [Section] 컨소시엄
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->	
 	<section id="consortium">
 		<div id="banner" class="als-container">
 			<h1>컨소시엄</h1>
@@ -223,11 +199,6 @@
 			<input type="submit" class="form-submit" value="접수하기" />
 		</form>
 	</section>
-	
-	
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			                                                         Footer
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->		
 	<body onload="initialize()">
 		<div id="map_canvas" style="width:100%; height:400px;"></div>
 		<footer id="footer" class="footer">
@@ -241,7 +212,5 @@
 			</div>
 		</footer>
 		<a href="#" id="arrow-top"><i class="fa fa-long-arrow-up"></i></a>
-		
-		
 	</body>
 </html>
