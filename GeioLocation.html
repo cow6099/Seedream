@@ -153,8 +153,8 @@
  
     function mapInit(latitude, longitude) {
         
-
         var opt = {
+            scrollwheel: false,
             zoom: 19,
             center: new google.maps.LatLng(latitude, longitude),
             mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -162,15 +162,17 @@
  
         var map = new google.maps.Map(document.getElementById('map_canvas'), opt);
         var marker = new google.maps.Marker({
-                position: myLatlng,
+                position: new google.maps.LatLng(latitude, longitude),
                 map: map,
-                title: "seedream"
+                title: "현재위치"
             });
     };
-
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <div id="map_canvas"></div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                     Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <body onload="initialize()">
             <footer id="footer" class="footer">
             <div class="footer-inner">
@@ -186,17 +188,4 @@
         
     </body>
 </body>
-</html>
-
-
-
-
-
-
-
-
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                     Footer
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->        
-
 </html>
