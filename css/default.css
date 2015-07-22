@@ -94,7 +94,7 @@ nav > .nav-inner > ul > li > a:before {
 }
 nav > .nav-inner > ul > li a:hover:before,
 nav > .nav-inner > ul > li a:focus:before {
-	bottom: -6px;
+	bottom: 25px;	
 	opacity: 1;
 }
 nav ul ul {  
